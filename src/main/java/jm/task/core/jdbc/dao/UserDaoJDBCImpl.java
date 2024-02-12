@@ -161,6 +161,10 @@ public class UserDaoJDBCImpl extends Util implements UserDao {
                 }
             }
         }
+        for (User list : usersList) {
+            System.out.println(list.toString());
+        }
+        
         return usersList;
     }
 
